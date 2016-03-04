@@ -1,0 +1,452 @@
+/* CSS Reset */
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a,
+em, img, ul, li, form, label,
+table, caption, tbody, tfoot,
+thead, tr, th, td,
+article, aside,
+figure, figcaption, footer, header,
+menu, nav, section,
+{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* основной css */
+body {
+    font: 14px Arial, sans-serif;
+    background-color: #fdfdfd;
+    border-top: 10px solid #ff516a; /* дизайнерская линия вверху страницы */
+    margin: 0;
+}
+
+#page {
+    width: 960px;
+    height: 1559px;
+    margin: auto;
+}
+/* хедер */
+#header {
+    margin: auto;
+    width: 960px;
+}
+
+header {
+    height: 160px;
+    width: 960px;
+}
+
+header img {
+    margin-top: 49px;
+}
+
+/* форма поиска */
+header form {
+    margin-top: 50px;
+    float: right;
+}
+
+.search {
+    width: 420px;
+    border: 1px solid rgb(210, 210, 210);
+    height: 32px;
+}
+
+input[type="search"] {
+    padding-left: 4px;
+    height: 30px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 394px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    font-size: 14px;
+    font-style: italic;
+
+}
+
+input[type="submit"] {
+    width: 17px;
+    height: 17px;
+    border: none;
+    vertical-align: middle;
+    background: url(../images/glass.png) no-repeat 50% 50%;
+}
+
+/* телефоны */
+#phones {
+    font-size: 17px;
+    color: rgb(54, 54, 54);
+    opacity: 0.9;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+#phones div + div {
+    margin-left: 27px;
+}
+/* верхняя панель навигиции */
+#navigation {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    height: 50px;
+}
+
+nav {
+    margin: auto;
+    width: 960px;
+    height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #111;
+    opacity: 0.9;
+    font-weight: bold;
+    height: 50px;
+    display: block;
+}
+
+nav li {
+    display: inline-block;
+    padding: 16px 24px;
+    margin: 0;
+    border-right: 1px solid rgb(210, 210, 210); /* рисуем разделительные линии справа */
+    height: 50px;
+}
+/* у последнего li нет границы */
+.top-menu li:last-child {
+    border: none;
+}
+
+.top-menu li:first-child {
+    margin-left: 13px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #FF0202;
+}
+/* основной контент */
+div#content {
+    width: 960px;
+    margin: auto;
+}
+/* карусель bootstrap */
+#carousel-example-generic {
+    width: 960px;
+    height: 350px;
+    margin-bottom: 37px;
+}
+
+#carousel-example-generic div[class="item active"] {
+    width: 960px;
+    height: 350px;
+    background: url(../images/slider-pic.png) repeat-y 50% 50%;
+    background-size: 100%;
+}
+
+#carousel-example-generic .carousel-indicators {
+    height: 36px;
+    width: 150px;
+    -moz-border-radius: 5px 5px 0 0; /* Firefox */
+    -webkit-border-radius: 5px 5px 0 0; /* Safari, Chrome */
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(253, 253, 253, 0.7);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+}
+/* дизайнерский преключатель, не активный */
+#carousel-example-generic .carousel-indicators li {
+    text-decoration: none;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    vertical-align: middle;
+    border: none;
+    background: url("../images/ellipse.png") no-repeat;
+}
+/* дизайнерский переключатель, активный */
+#carousel-example-generic .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
+    background: url("../images/ellipse_non.png");
+    background-size: 100%;
+}
+/* левая  колонка */
+aside {
+    float: left;
+    width: 215px;
+    margin-right: 33px;
+}
+/* правая колонка */
+section {
+    width: 712px;
+    margin-left: 248px;
+}
+/* баннеры */
+aside img {
+    margin-bottom: 48px;
+}
+
+aside img:hover {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+/* заголовки контента */
+section a.sq {
+    color: rgba(1, 1, 1, 0.7);
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 29px;
+}
+
+section a.sq:hover {
+    color: #FF0202;
+}
+/* о магазине */
+section div#about {
+    width: 712px;
+}
+/* о компании */
+section div.company {
+    margin-top: 29px;
+    text-align: justify;
+    margin-bottom: 67px;
+}
+/* новости */
+div.column {
+    margin-top: 17px;
+}
+
+div#news div.articles {
+    display: block;
+}
+
+div#news div.articles a {
+    text-decoration: none;
+}
+/* блоки новостей */
+div#news div.articles figure {
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    height: 183px;
+    width: 215px;
+    margin-bottom: 48px;
+}
+/* отступ слева у всех блоков кроме первого */
+div#news div.articles figure + figure {
+    margin-left: 32px;
+}
+/* стиль выводимой даты */
+.date {
+    color: rgba(1, 1, 1, 0.7);
+    font-style: italic;
+}
+/* ссылка на новость */
+.news-article {
+    color: rgba(1, 1, 1, 0.9);
+}
+
+div#news div.articles a:hover {
+    text-decoration: none;
+    color: #FF0202;
+}
+/* подвал */
+#footer {
+    height: 40px;
+    width: 100%;
+    background-color: #ff516a;
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 12px;
+}
+
+div#copy-nav {
+    margin: 0px auto;
+    width: 960px;
+}
+/* копирайт */
+footer div#copyright {
+    float: left;
+    margin-top: 14px;
+    margin-left: 17px;
+}
+/* навигация в подвале */
+footer div#nav ul {
+    margin: 0;
+    float: right;
+    padding-right: 10px;
+}
+
+footer div#nav li {
+    display: inline-block;
+    padding-top: 14px;
+    margin-right: 27px;
+}
+
+footer a {
+    color: #f4f4f4;
+}
+
+footer a:hover {
+    color: #FF0202;
+    text-decoration: none;
+}
+/* меню в левой колонке */
+aside ul.aside-menu {
+    background-color: #ff516a;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul.aside-menu li {
+    border-top: 1px solid #e7e7e7;
+    height: 40px;
+    list-style-type: none;
+}
+
+aside ul.aside-menu li:hover {
+    background-color: #ff6e7f;
+}
+
+aside ul.aside-menu li:first-child {
+    border: none;
+}
+
+aside ul.aside-menu li a {
+    color: #f4f4f4;
+    height: 38px;
+    padding: 9px 18px;
+    display: block;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* новинки */
+section div#new {
+    height: 41px;
+    background-color: #ff516a;
+    display: block;
+    margin-bottom: 29px;
+}
+
+section div#new div#newone {
+    color: #f4f4f4;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 18px;
+    padding-top: 10px;
+}
+/* показ продукции */
+div.products {
+    margin-bottom: 41px;
+}
+/* одна еденица продукции */
+div.products div.product-item {
+    height: 376px;
+    width: 215px;
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    margin-bottom: 41px;
+}
+/* изображение продукции */
+div.products div.product-item img.product-image {
+    height: 278px;
+    width: 215px;
+    border: 1px solid rgb(226, 226, 226);;
+}
+/* выделение при наведении */
+div.products div.product-item img.product-image:hover {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+/* описание продукции */
+div.products div.product-item div.product-title {
+    margin-top: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+}
+/* цена */
+div.products div.product-item div.price {
+    float: left;
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+/* меленькая грн. */
+div.products div.product-item div.price span {
+    font-size: 13px;
+}
+/* изображение корзины для покупок */
+div.products div.product-item div.shopping-cart {
+    margin-left: 175px;
+    height: 30px;
+    width: 40px;
+    background-color: #FF0202;
+}
+
+div.products div.product-item div.shopping-cart:hover {
+    background-color: #ff312c;
+}
+
+div.products div.product-item div.shopping-cart a {
+    display: block;
+    height: 29px;
+}
+
+div.products div.product-item div.shopping-cart img {
+    margin-left: 8px;
+    margin-top: 6px;
+}
+/* цена и корзина */
+div.products div.product-item div.prise-n-cart {
+    margin-top: 12px;
+}
+/* отступы слева у всех элементов продукции кроме первого */
+div.products div.product-item + div.product-item {
+    margin-left: 32px;
+}
+
+
